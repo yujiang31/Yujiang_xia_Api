@@ -1,0 +1,49 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+/* Sección principal */
+main {
+    padding: 20px;
+}
+
+
+h1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin: 0px;
+}
+
+h2 {
+    color: #4CAF50;
+    padding: 20px 0;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+ul li{
+    color: #4CAF50;
+    padding: 20px 0;
+    margin: 0px;
+
+}

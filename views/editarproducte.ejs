@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producte</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Editar Producte: <%= product.nombre %></h1>
+    </header>
+
+    <main class = "formul">
+        <section>
+
+            <form action="/recursos/<%= product.id %>/editar" method="POST">
+                <div>
+                    <label for="nombre">Nom:</label><br>
+                    <input type="text" id="nombre" name="nombre" value="<%= product.nombre %>" required>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoria:</label><br>
+                    <input type="text" id="categoria" name="categoria" value="<%= product.categoria %>" required>
+                </div>
+
+                <div>
+                    <label for="precio">Preu:</label><br>
+                    <input type="text" id="precio" name="precio" value="<%= product.precio %>" required>
+                </div>
+
+                <div>
+                    <button type="submit">Guardar Canvis</button>
+                </div>
+
+                <div>
+                    <a href="/recursos">Tornar a la Llista de Productes</a>
+                </div>
+
+            </form>
+
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "recursos": [
+        {
+            "recursos_id": 1,
+            "tipus": "Equipament",
+            "estat": "disponible"
+        },
+        {
+            "recursos_id": 2,
+            "tipus": "Sales",
+            "estat": "Reservat"
+        },
+        {
+            "recursos_id": 3,
+            "tipus": "Vehicle",
+            "estat": "Fora de servei"
+        },
+        {
+            "recursos_id": 4,
+            "tipus": "Sales",
+            "estat": "Reservat"
+        }
+    ]
+}
