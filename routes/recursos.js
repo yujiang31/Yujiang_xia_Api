@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
     const htmlMessage = `
     <p>Aquest és un text <strong>amb estil</strong> i un enllaç:</p>
     <a href="https://www.example.com">Visita Example</a>
-    <p><a href="/">Volver Pagina Principal</a></p>`;
+    <p><a href="/home">Volver Pagina Principal</a></p>`;
     
     const data = readDataProducts(); 
     res.render("recursos", { user, data, htmlMessage });
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
     const htmlMessage = `
         <p>Aquest és un text <strong>amb estil</strong> i un enllaç:</p>
         <a href="https://www.example.com">Visita Example</a>
-        <p><a href="/">Volver Pagina Principal</a></p>`;
+        <p><a href="/recursos">Volver Listado</a></p>`;
 
     res.render("detallproductes", { products, user, htmlMessage, data }); 
 });
