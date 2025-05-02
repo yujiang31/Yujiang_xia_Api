@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "66a74c9d-4d84-4762-be02-2f3c330cfc94",
+        "username": "ex123",
+        "password": "$2b$10$soECDSJZIZIYMEJKRVDZDOu1n9/gJhtHWp2k740mAVewic2gowm4K"
+    },
+    {
+        "_id": "25f78305-9cbb-4fca-8cd0-12fe4743283a",
+        "username": "hola12",
+        "password": "$2b$10$AxmaoRF9aWjEk2pyS4xlCehVkSATmeVBk8INeZRWKjpWLKXVaGBqq"
+    },
+    {
+        "_id": "c0af4f32-e3cb-4778-9fd9-bd632de76569",
+        "username": "hola123",
+        "password": "$2b$10$nzuMjgCocC46dZLEIDEiBu0QYTiGMAhGTCVtJvsMUdX10bcrldoaS"
+    }
+]
