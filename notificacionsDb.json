@@ -1,22 +1,22 @@
 {
-    "products": [
+    "notificacions": [
         {
             "id": 1,
-            "nombre": "Producte 1",
-            "precio": 10,
-            "categoria": "aliment"
+            "app": "Facebook",
+            "mensaje": "Un mensaje de Maria",
+            "categoria": "Redes Sociales"
         },
         {
             "id": 2,
-            "nombre": "Producte 2",
-            "precio": 20,
-            "categoria": "roba"
+            "app": "Play Store",
+            "mensaje": "Juego descargado: Clash of clans",
+            "categoria": "App Launcher"
         },
         {
             "id": 3,
-            "nombre": "Producte 2 editat",
-            "precio": 50,
-            "categoria": "roba"
+            "app": "Classroom",
+            "mensaje": "Francesc ha publicado una nueva practica",
+            "categoria": "productividad"
         }
     ]
 }

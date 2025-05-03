@@ -4,7 +4,7 @@ import fs from "fs";
 const router = express.Router();
 
 // Leer el JSON de recursos
-const readDataProducts = () => JSON.parse(fs.readFileSync('./productsDb.json', 'utf-8'));
+const readDataProducts = () => JSON.parse(fs.readFileSync('./recursosDb.json', 'utf-8'));
 
 // Mostrar lista de recursos
 router.get('/', (req, res) => {
@@ -19,13 +19,13 @@ router.get('/', (req, res) => {
 });
 
 // Mostrar detalle de un recurso
-router.get('/:id', (req, res) => {
+router.get('/:recursos_id', (req, res) => {
     const data = readDataProducts();
-    const productId = parseInt(req.params.id, 10);
-    const products = data.products.find(r => r.id === productId);
+    const recursosId = parseInt(req.params.recursos_id, 10);
+    const recursos = data.recursos.find(r => r.recursos_id === recursosId);
 
-    if (!products) {
-        return res.status(404).send("Producto no encontrado");
+    if (!recursos) {
+        return res.status(404).send("Recurso no encontrado");
     }
 
     const user = { name: "Yujiang" };
@@ -34,17 +34,17 @@ router.get('/:id', (req, res) => {
         <a href="https://www.example.com">Visita Example</a>
         <p><a href="/recursos">Volver Listado</a></p>`;
 
-    res.render("detallproductes", { products, user, htmlMessage, data }); 
+    res.render("detallrecursos", { recursos, user, htmlMessage, data }); 
 });
 
 
 // Editar el recurso
-router.get('/:id/editar', (req, res) => {
-    const productId = parseInt(req.params.id, 10); 
+router.get('/:recursos_id/editar', (req, res) => {
+    const recursosId = parseInt(req.params.recursos_id, 10); 
     const data = readDataProducts();
     
 
-    const product = data.products.find(p => p.id === productId);
+    const product = data.recursos.find(p => p.recursos_id === recursosId);
 
     if (!product) {
         return res.status(404).send("Producto no encontrado");
@@ -57,7 +57,7 @@ router.get('/:id/editar', (req, res) => {
         <p><a href="/">Volver Pagina Principal</a></p>`;
 
 
-    res.render("editarproducte", { product, user, htmlMessage, data });
+    res.render("editarrecursos", { product, user, htmlMessage, data });
 });
 
 

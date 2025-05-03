@@ -16,11 +16,13 @@
         <section>
             <h2>Llista de Productes</h2>
             <ul class="product-list">
-                <% products.forEach(product=> { %>
+                <% products.forEach(products=> { %>
                     <li class="product-item">
-                        <strong> <%= product.nombre %> </strong>
-                        <span>Categoria: <%= product.categoria %></span>
-                        <span>Preu: <%= product.precio %></span>
+                        <strong> <%= products.id %> </strong>
+                        <span>Nombre: <%= products.nombre %></span>
+                        <span>Categoria: <%= products.categoria %></span>
+                        <span><a href="/products/<%= products.id%>">Detall de Producte</a></span>
+                        <span><a href="/products/<%= products.id %>/editar">Editar Producto</a></span>    
                     </li>
                     <% }); %>
             </ul>

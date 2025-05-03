@@ -1,22 +1,19 @@
 {
-    "products": [
+    "usuaris": [
         {
             "id": 1,
-            "nombre": "Producte 1",
-            "precio": 10,
-            "categoria": "aliment"
+            "nombre": "Juan",
+            "departamento": "IT"
         },
         {
             "id": 2,
-            "nombre": "Producte 2",
-            "precio": 20,
-            "categoria": "roba"
+            "nombre": "Maria",
+            "departamento": "Assesor"
         },
         {
             "id": 3,
-            "nombre": "Producte 2 editat",
-            "precio": 50,
-            "categoria": "roba"
+            "nombre": "Pablo",
+            "departamento": "Finanzas"
         }
     ]
 }
